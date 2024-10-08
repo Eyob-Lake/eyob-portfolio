@@ -1,0 +1,191 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables for easy theme management */
+:root {
+  --primary-color: #333;          /* Dark color for headers and buttons */
+  --secondary-color: #ff6347;     /* Highlight color for hover effects */
+  --background-color: #f9f9f9;    /* Light background color */
+  --text-color: #333;             /* Dark text color */
+  --light-text-color: #fff;       /* Light text color for contrast */
+  --purple-color: #800080;         /* Purple for projects section */
+}
+
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Home section styles */
+#home {
+  background-image: url('eyob.jpg'); /* Update this path */
+  background-size: cover; /* Ensures the image covers the section */
+  background-position: center; /* Center the image */
+  color: var(--light-text-color);
+  padding: 6rem 2rem;
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center; /* Vertically centers items */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.portfolio-link {
+  margin-right: 1rem; /* Adds space between portfolio link and logo */
+}
+
+.header-logo {
+  height: 50px; /* Adjust height as necessary */
+  margin-right: 2rem; /* Space between logo and nav */
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header li {
+  margin: 0 1.5rem;
+}
+
+header a {
+  color: var(--light-text-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: var(--secondary-color);
+}
+
+/* Main heading styles */
+h1 {
+  text-align: center;
+  color: var(--light-text-color);
+  font-size: 3rem;
+  margin-top: 3rem;
+  letter-spacing: 2px;
+}
+
+/* Section styles */
+section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section h2 {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+section p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Button styles */
+button {
+  padding: 0.8rem 2.5rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  color: var(--light-text-color);
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+/* Projects section styles */
+#projects {
+  background-color: var(--purple-color);
+  color: var(--light-text-color);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack logo and navigation */
+    align-items: center; /* Center align for mobile view */
+  }
+
+  .header-logo {
+    margin-bottom: 1rem; /* Adds space between logo and nav */
+  }
+
+  header ul {
+    flex-direction: column; /* Stack navigation items */
+    align-items: center; /* Center align for mobile view */
+  }
+
+  header li {
+    margin: 0.5rem 0; /* Adjust margin for stacked items */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Adjust heading size for mobile */
+  }
+
+  section h2 {
+    font-size: 2rem; /* Adjust section heading size for mobile */
+  }
+
+  section p {
+    font-size: 1.1rem; /* Adjust paragraph size for mobile */
+  }
+
+  button {
+    padding: 0.7rem 2rem; /* Adjust button size for mobile */
+  }
+}
