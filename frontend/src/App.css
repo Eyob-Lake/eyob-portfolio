@@ -27,8 +27,8 @@ body {
 /* Home section styles */
 #home {
   background-image: url('eyob.jpg'); /* Update this path */
-  background-size: cover; /* Ensures the image covers the section */
-  background-position: center; /* Center the image */
+  background-size: cover;
+  background-position: center;
   color: var(--light-text-color);
   padding: 6rem 2rem;
 }
@@ -44,17 +44,17 @@ header {
 
 .nav-container {
   display: flex;
-  align-items: center; /* Vertically centers items */
-  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .portfolio-link {
-  margin-right: 1rem; /* Adds space between portfolio link and logo */
+  margin-right: 1rem;
 }
 
 .header-logo {
-  height: 50px; /* Adjust height as necessary */
-  margin-right: 2rem; /* Space between logo and nav */
+  height: 50px;
+  margin-right: 2rem;
 }
 
 header ul {
@@ -156,36 +156,36 @@ footer a:hover {
 /* Responsive styles */
 @media (max-width: 768px) {
   header {
-    flex-direction: column; /* Stack logo and navigation */
-    align-items: center; /* Center align for mobile view */
+    flex-direction: column;
+    align-items: center;
   }
 
   .header-logo {
-    margin-bottom: 1rem; /* Adds space between logo and nav */
+    margin-bottom: 1rem;
   }
 
   header ul {
-    flex-direction: column; /* Stack navigation items */
-    align-items: center; /* Center align for mobile view */
+    flex-direction: column;
+    align-items: center;
   }
 
   header li {
-    margin: 0.5rem 0; /* Adjust margin for stacked items */
+    margin: 0.5rem 0;
   }
 
   h1 {
-    font-size: 2.5rem; /* Adjust heading size for mobile */
+    font-size: 2.5rem;
   }
 
   section h2 {
-    font-size: 2rem; /* Adjust section heading size for mobile */
+    font-size: 2rem;
   }
 
   section p {
-    font-size: 1.1rem; /* Adjust paragraph size for mobile */
+    font-size: 1.1rem;
   }
 
   button {
-    padding: 0.7rem 2rem; /* Adjust button size for mobile */
+    padding: 0.7rem 2rem;
   }
 }
